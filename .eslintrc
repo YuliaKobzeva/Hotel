@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "no-unused-vars":"warn"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "jquery": true,
+    "commonjs": true
+
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "html"
+]
+}

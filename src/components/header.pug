@@ -1,0 +1,19 @@
+
+header
+  .container
+    mixin link(href, name, icon)
+      a(class="header_link" href=href)= name
+        if icon
+          i.material-icons keyboard_arrow_down
+
+
+    +link('', 'О нас')
+    +link('', 'Услуги', `${icon}`)
+    +link('','Новости')
+    +link('','Соглашения', `${icon}`)
+    include buttons.pug
+    +button-light('Войти')
+
+
+
+
