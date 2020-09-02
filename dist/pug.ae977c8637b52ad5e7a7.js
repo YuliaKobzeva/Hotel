@@ -422,9 +422,14 @@ pug_mixins["link"]('','Новости');
 pug_mixins["link"]('','Соглашения', `${icon}`);
 pug_mixins["button-light"] = pug_interp = function(text){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
-pug_html = pug_html + "\u003Cdiv class=\"button-container\"\u003E\u003Cbutton class=\"button\"\u003E" + (pug.escape(null == (pug_interp = text) ? "" : pug_interp)) + "\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E";
+pug_html = pug_html + "\u003Cbutton class=\"button\"\u003E\u003Cdiv class=\"button-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"button-text\"\u003E" + (pug.escape(null == (pug_interp = text) ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fbutton\u003E";
 };
 pug_mixins["button-light"]('Войти');
+pug_mixins["button-gradient"] = pug_interp = function(text){
+var block = (this && this.block), attributes = (this && this.attributes) || {};
+pug_html = pug_html + "\u003Cbutton class=\"button-registration\"\u003E" + (pug.escape(null == (pug_interp = text) ? "" : pug_interp)) + "\u003C\u002Fbutton\u003E";
+};
+pug_mixins["button-gradient"]('зарегистрироваться');
 pug_html = pug_html + "\u003C\u002Fdiv\u003E\u003C\u002Fheader\u003E\u003C\u002Fhtml\u003E";
     }.call(this, "icon" in locals_for_with ?
         locals_for_with.icon :
@@ -446,4 +451,4 @@ module.exports = template;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=pug.5fb257a1c322dfbb1f1d.js.map
+//# sourceMappingURL=pug.ae977c8637b52ad5e7a7.js.map
