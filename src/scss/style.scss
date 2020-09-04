@@ -117,8 +117,8 @@ header {
 
 }
 
-.logo {
-
+.logo-wrapper {
+  position: absolute;
   width: 105.69px;
   height: 40px;
   left: 140px;
@@ -126,27 +126,16 @@ header {
 
 }
 
-.circle-wrapper {
-
-
-  position: relative;
-  width: 36px;
-  height: 36px;
-  left: 140px;
-  top: 15px;
-  border-radius: 50%;
-  padding: 2px;
-
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+.arc_1 {
+  position: absolute;
+  left: 9.41px;
+  top: 15.29px;
 }
 
-.cirlce {
+.arc_2 {
   position: absolute;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
 
-
-  background: #FFFFFF;
+  left: 21.47px;
+  top: 9.29px;
 
 }
