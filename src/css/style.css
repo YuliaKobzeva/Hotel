@@ -1,2 +1,6 @@
-
 @import "~normalize.css";
+
+@font-face {
+  font-family: 'Awesome';
+  src: url("../assets/fonts/Font\ Awesome\ 5\ Brands-Regular-400.otf") format('truetype');
+}
