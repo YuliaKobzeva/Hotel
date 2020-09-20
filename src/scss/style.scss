@@ -5,6 +5,10 @@
 
 @import "../components/logo/logo.scss";
 
-@import "../components/background/background.scss";
+@import "../components/main/main.scss";
 
-@import "../components/footer/footer.scss"
+@import "../components/footer/footer.scss";
+
+@import "../components/form/form.scss";
+
+@import "node_modules/air-datepicker/src/sass/datepicker.scss";

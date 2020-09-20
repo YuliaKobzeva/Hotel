@@ -5,6 +5,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
+const webpack = require('webpack');
+
 
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -97,6 +99,12 @@ module.exports = {
         collapseWhitespace: isProd
       }
     }),
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
+
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
