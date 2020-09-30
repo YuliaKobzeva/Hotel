@@ -1,0 +1,45 @@
+
+
+.datepicker-wrapper {
+  width: 150px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+label {
+  @include font-title(uppercase, bold, 12px, #1F2041);
+}
+
+.datepicker__input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 44px;
+  margin-top: 5px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+}
+
+.datepicker__input {
+  width: 87px;
+  height: 24px;
+  margin-left: 15px;
+  outline: transparent;
+  border: transparent;
+  @include plain-text(rgba(31, 32, 65, 0.75), 18px)
+}
+
+.datepicker__button-arrow-down {
+  border: transparent;
+  outline: transparent;
+  background: transparent;
+  width: 44px;
+  height: 44px;
+
+}

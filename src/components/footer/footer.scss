@@ -1,0 +1,146 @@
+
+// MIXINS
+
+@mixin font-title($textTransform, $fontWeight, $fontSize, $color) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: 15px;
+  color:$color;
+  text-transform: $textTransform;
+}
+
+
+@mixin plain-text($color, $lineHeight) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+
+
+
+
+// WRAPPERS
+
+.footer-coneiner-wrapper {
+  margin-left: 140px;
+}
+
+.footer-block-wrapper {
+  display: block;
+  // flex-direction: column;
+  margin-top: 104px;
+
+}
+
+
+.p-wrapper {
+  width: 260px;
+  height: 72px;
+  @include plain-text(rgba(31, 32, 65, 0.75), 24px);
+}
+.subscribe-wrapper {
+  width: 260px;
+  height: 144px;
+  margin-top: 21px;
+  margin-right: 0px;
+  @include plain-text(rgba(31, 32, 65, 0.75), 24px)
+}
+
+.email-wrapper {
+  @include plain-text(rgba(31, 32, 65, 0.25), 24px);
+  width: 260px;
+  height: 44px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+  // input {
+  //   padding-left: 15px;
+  // }
+}
+// /* VARS */
+$textTransform: uppercase;
+
+
+//BLOCKS
+
+footer {
+  width: 1440px;
+  height: 372px;
+}
+
+.footer-conteiner {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  width: 1160px;
+  height: 372px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+}
+
+// .footer-block {
+//   display: block;
+// }
+
+
+.footer__title {
+  @include font-title(uppercase, bold, 12px, #1F2041)
+}
+
+.footer__link {
+  @include font-title(none, normal, 14px, #8f9091);
+  display: block;
+
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.email-input {
+  border: transparent;
+  outline: transparent;
+
+}
+
+.email__submit {
+  border: transparent;
+  background: transparent;
+  outline: transparent;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items:center;
+  width: 1440px;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.copyright {
+  margin-left: 140px;
+
+  @include plain-text(rgba(31, 32, 65, 0.75), 24px);
+
+}
+
+.container__icons {
+  width: 112px;
+  height: 24px;
+  margin-left: 681px;
+  display: flex;
+  justify-content: space-between;
+}
+

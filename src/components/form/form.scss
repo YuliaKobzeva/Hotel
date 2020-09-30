@@ -1,0 +1,38 @@
+.form {
+  position: absolute;
+  width: 380px;
+  height: 374px;
+  left: 140px;
+  top: 140px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.form__textContent {
+  width: 320px;
+  height: 60px;
+  font: {
+    family: Open Sans;
+    style: normal;
+    size: 24px;
+    weight: 700;
+  }
+  line-height: 30px;
+}
+
+.form__datePickers {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 320px;
+  
+}

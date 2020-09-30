@@ -1,0 +1,28 @@
+
+header
+  include ../../assets/svg.pug
+  +logo(`${margin}`)
+  .header-container
+    mixin link(href, name, icon)
+      a(class="header_link" href=href)= name
+        if icon
+          i.material-icons keyboard_arrow_down
+
+
+    +link('', 'О нас')
+    +link('', 'Услуги', `${icon}`)
+    +link('','Новости')
+    +link('','Соглашения', `${icon}`)
+
+  .header-actions
+    include ../buttons/button-ligth.pug
+    +button-light('Войти')
+    include ../buttons/button-gradient.pug
+    +button-gradient('зарегистрироваться')
+    .authorization
+
+
+
+
+
+

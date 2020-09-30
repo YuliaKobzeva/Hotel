@@ -1,0 +1,51 @@
+- const footerLinksLogo = {title: ``}
+
+- const footerLinksNavigation = {title: 'Навигация', description: ["О нас", "Новости", "Служба поддержки", "Услуги"]}
+
+- const footerLinksAbout = {title: 'О нас', description: ["О сервисе", "Наша команда", "Вакансии", "Инвесторы"]}
+
+- const footerLinksSupport = {title: 'Служба поддержки', description: ["Соглашения", "Сообщества", "Связь с нами"]}
+
+-const footerSubscribe = {title: 'Подписка'}
+
+
+
+mixin footer-block-rendering(obj, logo, subscribe)
+  .footer-block.footer-block-wrapper
+    if (logo)
+      +logo()
+      p.p-wrapper Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+    else if (subscribe)
+      .footer__title Подписка
+      .subscribe-wrapper Получайте специальные предложения и новости сервиса
+        .email-wrapper
+          input.email-input(
+            type="email"
+            placeholder="Email")
+          button.email__submit(type="submit")
+            +arrowForward()
+    else
+      .footer__title= `${obj.title}`
+      - for(let i = 0; i < `${obj.description.length}`; i++)
+        a(class="footer__link" href="")= `${obj.description[i]}`
+
+
+
+
+footer
+  .footer-conteiner.footer-coneiner-wrapper
+    +footer-block-rendering(footerLinksLogo, `${logo}`)
+    +footer-block-rendering(footerLinksNavigation)
+    +footer-block-rendering(footerLinksAbout)
+    +footer-block-rendering(footerLinksSupport)
+    +footer-block-rendering(footerSubscribe, !`${logo}`,`${subscribe}`)
+  .footer-copyright
+    .copyright
+      p Copyright © 2018 Toxin отель. Все права зачищены
+    .container__icons
+      include ../../assets/svg.pug
+      +twitter()
+      +facebook()
+      +instagram()
+
+
