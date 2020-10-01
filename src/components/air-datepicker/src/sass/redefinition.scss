@@ -1,4 +1,12 @@
+//MIXINS//
 
+@mixin buttonDown {
+  border: transparent;
+  outline: transparent;
+  background: transparent;
+  width: 44px;
+  height: 44px;
+}
 
 .datepicker-wrapper {
   width: 150px;
@@ -36,10 +44,36 @@ label {
 }
 
 .datepicker__button-arrow-down {
+  @include buttonDown
+
+}
+
+.guests {
+  width: 320px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.guests__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.guests__input {
   border: transparent;
   outline: transparent;
-  background: transparent;
-  width: 44px;
-  height: 44px;
+  margin-left: 15px;
+  @include plain-text(rgba(31, 32, 65, 0.75), 18px, )
+}
 
+.guests__button-arrow-down {
+  @include buttonDown
 }

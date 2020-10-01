@@ -11,4 +11,10 @@ mixin inputDatepicker(labelText, id)
   .form__datePickers
     +inputDatepicker('Прибытие', 'start')
     +inputDatepicker('Выезд', 'end')
+  .guests
+    label(for="guests") Гости
+    .guests__input-wrapper
+      input.guests__input(type="text", id="guests", placeholder="Сколько гостей")
+      button.guests__button-arrow-down
+        +arrowDown(12, 8)
 
