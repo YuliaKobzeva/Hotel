@@ -130,3 +130,24 @@ label {
 .datepicker {
   font-family: Montserrat;
 }
+
+.datepicker--day-name {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+  text-transform: none;
+}
+
+.datepicker--nav-title:hover {
+  background: #FFFFFF;
+}
+
+.datepicker--nav-title, .datepicker--nav-title i {
+  font-family: Open sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+}
