@@ -122,11 +122,6 @@ label {
   z-index:1
 }
 
-.datepicker--cell.-current- {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  color: #FFFFFF;
-}
-
 .datepicker {
   font-family: Montserrat;
 }
@@ -150,4 +145,56 @@ label {
   font-size: 19px;
   line-height: 24px;
   color: #1F2041;
+}
+
+
+.datepicker--cell.-current- {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+.datepicker--cell.-selected-.-focus- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+}
+
+.datepicker--cell.-in-range- {
+  background: linear-gradient(180deg,rgba(188,156,255,.25),rgba(139,164,249,.25));
+  border-radius: 0px;
+}
+
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current- {
+  color: #fff;
+  background: #5cc4ef;
+}
+
+.datepicker--cell.-range-from-.-range-to- {
+  border-radius: 50%;
+}
+.datepicker--cell.-selected- {
+  background: linear-gradient(180deg,#bc9cff,#8ba4f9);
+  border-radius: 50%;
+  font-weight: 700;
+
+  border: none;
+}
+.datepicker--cell.-selected-.-focus- {
+  background: #45bced;
+}
+
+.datepicker--cell.-range-from- {
+  border: none;
+  background-color: rgba(92, 196, 239, .1);
+  border-radius: 22px 0 0 22px;
+}
+.datepicker--cell.-range-to- {
+  border: none;
+  background-color: rgba(92, 196, 239, .1);
+  border-radius: 0 22px 24px 0;
+}
+
+.datepicker--cell.-selected-.-focus- {
+  background: linear-gradient(180deg,#bc9cff,#8ba4f9);
 }

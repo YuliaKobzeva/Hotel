@@ -7,5 +7,6 @@ for (let i = 0; i < buttonsArrowDown.length; i++) {
   })
 }
 
-console.log(buttonsArrowDown);
+const datepickerInputs = document.querySelector('#start');
+console.log(datepickerInputs.value);
 

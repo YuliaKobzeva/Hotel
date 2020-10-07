@@ -2,7 +2,7 @@ mixin inputDatepicker(labelText, id)
   .datepicker-wrapper
     label(for=`${id}`)= `${labelText}`
     .datepicker__input-wrapper
-      input.datepicker__input.datepicker-here(type='text', id=`${id}`, placeholder="ДД.ММ.ГГГГ" data-position='right top', data-timepicker="false")
+      input.datepicker__input.datepicker-here(type='text', id=`${id}`, placeholder="ДД.ММ.ГГГГ", data-range="true", data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-clear-button="true" data-today-button="true")
       button.datepicker__button-arrow-down
         +arrowDown(12, 8)
 
