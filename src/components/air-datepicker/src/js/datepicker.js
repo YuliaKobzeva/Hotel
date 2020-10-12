@@ -43,10 +43,10 @@
 
             multipleDates: false, // Boolean or Number
             multipleDatesSeparator: ',',
-            range: false,
+            range: true,
 
             todayButton: false,
-            clearButton: false,
+            clearButton: true,
 
             showEvent: 'focus',
             autoClose: false,
