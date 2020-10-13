@@ -40,7 +40,9 @@ label {
   margin-left: 15px;
   outline: transparent;
   border: transparent;
-  @include plain-text(rgba(31, 32, 65, 0.75), 18px)
+  @include plain-text(rgba(31, 32, 65, 0.75), 18px);
+
+
 }
 
 .datepicker__button-arrow-down {
@@ -104,6 +106,12 @@ label {
 
 }
 
+.datepickers-container {
+  position: absolute;
+  left: -16px;
+  top: 0;
+}
+
 .datepicker--cell{
   border-radius:22px;
   box-sizing:border-box;
@@ -122,20 +130,25 @@ label {
   z-index:1
 }
 
-
 .datepicker {
   font-family: Montserrat;
-  width: 320px;
+  width: 319px;
   height: 369px;
-  line-height: 15px;
+  font-size: 12px;
+
+  border: 1px solid rgba(31,32,65,.25);
+  box-shadow: 0 10px 20px rgba(31,32,65,.05);
+  border-radius: 4px;
 
 
 }
 
 
 .datepicker--content {
-  padding: 1.5rem 1.9rem .8rem 2rem;
-  // margin-bottom: 50px;
+  margin: 30px 20px 20px 20px;
+  padding: 0;
+
+
 }
 
 
