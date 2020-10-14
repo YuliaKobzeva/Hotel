@@ -109,7 +109,16 @@ label {
 .datepickers-container {
   position: absolute;
   left: -16px;
-  top: 0;
+  top: 6px;
+
+}
+
+.datepicker--cells {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 240px;
+
 }
 
 .datepicker--cell{
@@ -126,7 +135,8 @@ label {
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
-  height:32px;
+  width: 40px;
+  height: 40px;
   z-index:1
 }
 
@@ -135,7 +145,7 @@ label {
   width: 319px;
   height: 369px;
   font-size: 12px;
-
+  line-height: 15px;
   border: 1px solid rgba(31,32,65,.25);
   box-shadow: 0 10px 20px rgba(31,32,65,.05);
   border-radius: 4px;
@@ -145,10 +155,8 @@ label {
 
 
 .datepicker--content {
-  margin: 30px 20px 20px 20px;
-  padding: 0;
-
-
+  margin: 0px 20px 0px 20px;
+  padding: 4px;
 }
 
 
@@ -158,6 +166,16 @@ label {
   line-height: 15px;
   color: #BC9CFF;
   text-transform: none;
+}
+
+.datepicker--nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none;
+  min-height: 32px;
+  margin-top: 10px;
+
+
 }
 
 .datepicker--nav-title:hover {
@@ -276,12 +294,15 @@ label {
 
 }
 
+.datepicker--button:hover {
+  color: #4a4a4a;
+  background: #FFFFFF;
+}
+
 .datepicker--buttons {
   display: flex;
   align-items: center;
   border-top: none;
-
-
 }
 
 .datepicker--button {
@@ -295,13 +316,13 @@ label {
   height: 32px;
 }
 
-.datepicker--buttons>:first-child {
+.datepicker--buttons :first-child {
   @include font-title(uppercase, bold, 12px, #BC9CFF);
   justify-content: flex-start;
   padding-left: 20px;
 }
 
-.datepicker--buttons>:last-child {
+.datepicker--buttons :last-child {
   @include font-title(uppercase, bold, 12px, #BC9CFF);
   justify-content: flex-end;
   padding-right: 20px;
