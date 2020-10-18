@@ -17,7 +17,7 @@ mixin inputDatepicker(labelText, id)
       input.guests__input(type="text", id="guests", placeholder="Сколько гостей")
       button.guests__button-arrow-down
         +arrowDown(12, 8)
-    include ../../components/dropdown/dropdown.pug
+      include ../../components/dropdown/dropdown.pug
   .buttonSubmit-wrapper
     button.buttonSubmit Подобрать номер
     +arrowForward(`${white}`)
